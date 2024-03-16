@@ -1,0 +1,38 @@
+.technology__skill {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.56px;
+  background-color: #E8E8E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  min-width: 90px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .technology__skill {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.48px;
+    min-height: 57px;
+    min-width: 84px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .technology__skill {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.48px;
+    min-height: 57px;
+    min-width: 84px;
+  }
+}

@@ -1,0 +1,56 @@
+.about__site {
+  border-bottom: 1px solid #E8E8E8;
+  padding: 20px 0px 19px 0px;
+}
+.about__site-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -1.2px;
+  display: flex;
+  justify-content: space-between;
+  max-height: 50px;
+  overflow: hidden;
+}
+.about__stie-link-text {
+  max-width: 880px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.about__site-arrow {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__site-link {
+    font-size: 28px;
+    line-height: 50px;
+  }
+  .about__site-arrow {
+    font-size: 28px;
+    line-height: 60px;
+  }
+  .about__stie-link-text {
+    max-width: 420px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .about__site-link {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .about__site-arrow {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .about__stie-link-text {
+    max-width: 250px;
+  }
+}
