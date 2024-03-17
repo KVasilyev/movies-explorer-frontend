@@ -1,0 +1,18 @@
+.page {
+  max-width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link:hover {
+  opacity: 0.7;
+}
+.button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+.profile__inputs {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.profile__input-name {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  font-size: 11px;
+  line-height: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 100px;
+  width: 100%;
+}
+.profile__input {
+  min-height: 32px;
+  margin: 0px;
+  padding: 0px;
+  color: rgba(0,0,0,0.8);
+  font-size: 11px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: right;
+  border: 0;
+  max-width: calc(100% - 100px);
+  width: 100%;
+}
+.profile__input:focus {
+  outline: none;
+  color: rgba(0,0,0,1);
+}
+.profile__input:disabled {
+  background-color: #FFF;
+}
+.profile__input-error {
+  color: #FF4062;
+  font-size: 11px;
+  line-height: 12px;
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}

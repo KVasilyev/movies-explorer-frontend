@@ -1,2 +1,3 @@
 # movies-explorer-frontend
-Frontend for the graduation project
+
+Макет light-4
