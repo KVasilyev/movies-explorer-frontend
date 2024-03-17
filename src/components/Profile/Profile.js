@@ -51,7 +51,7 @@ function Profile() {
   }   
 
   return (
-    <section className='profile'>
+    <main className='profile'>
       <form className='profile__form' onSubmit={handleSubmit}>
         <div className='profile__form-top'>
         <h1 className='profile__headline'>Привет, Константин!</h1>
@@ -92,12 +92,12 @@ function Profile() {
           ) : (
             <>
               <Link className='profile__link link' onClick={handleEdit}>Редактировать</Link>
-              <Link className='profile__link link profile__link_red'>Выйти из профиля</Link>
+              <Link to='/' className='profile__link link profile__link_red'>Выйти из профиля</Link>
             </>
           )}
         </div>
       </form>
-    </section>
+    </main>
   )
 }
 

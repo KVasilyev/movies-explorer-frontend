@@ -16,23 +16,25 @@ function Input({
   errorMesage
 }) {
   return (
-    <label className='form__lable'>
-          {inputLabel}
-          <input
-            className={`form__input ${error ? 'form__input_error' : ''}` }
-            disabled={inputState}
-            placeholder={inputPlaceholder}
-            name={inputName} 
-            type={inputType}
-            id={inputName}
-            onChange={onChange}
-            value={inputValue}  
-            minLength={minLength}
-            maxLength={maxLength}
-            required
-          />
-          <span className='form__input-error'>{error ? errorMesage : ''}</span>
-    </label>
+    <fieldset className='form__inputs'>
+      <label className='form__lable'>
+            {inputLabel}
+            <input
+              className={`form__input ${error ? 'form__input_error' : ''}` }
+              disabled={inputState}
+              placeholder={inputPlaceholder}
+              name={inputName} 
+              type={inputType}
+              id={inputName}
+              onChange={onChange}
+              value={inputValue}  
+              minLength={minLength}
+              maxLength={maxLength}
+              required
+            />       
+      </label>
+      <span className='form__input-error'>{error ? errorMesage : ''}</span>
+    </fieldset>
   )
 }
 

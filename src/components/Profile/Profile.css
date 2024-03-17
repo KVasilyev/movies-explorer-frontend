@@ -14,7 +14,7 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 29px;
   margin-bottom: 114px;
 }
 .profile__form {
@@ -52,7 +52,6 @@
   color: #FF4062;
   font-weight: 500;
 }
-
 .profile__button {
   background-color: #3456F3;
   border: 0;
@@ -85,4 +84,25 @@
   display: block;
   min-width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .profile__form {
+    min-height: 445px;
+  }
+  .profile__headline {
+    margin-bottom: 96px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .profile__form {
+    max-width: 100%;
+    min-height: calc(100vh - 74px);
+    padding: 70px 30px 40px 30px;
+    box-sizing: border-box;
+  }
+  .profile__headline {
+    margin-bottom: 80px;
+  }
 }

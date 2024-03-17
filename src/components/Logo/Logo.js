@@ -9,9 +9,9 @@ function Logo() {
   return (
     <>
     {pathname === '/' ? (
-      <img src={logo} alt='Учебный проект студента факультета Веб-разработки' className='header__logo' />
+      <img src={logo} alt='Учебный проект студента факультета Веб-разработки' className='logo' />
     ) : ( 
-      <Link to='/'><img src={logo} alt='Учебный проект студента факультета Веб-разработки' className='header__logo' /></Link> )
+      <Link to='/'><img src={logo} alt='Учебный проект студента факультета Веб-разработки' className='logo' /></Link> )
     }
     </>
   )

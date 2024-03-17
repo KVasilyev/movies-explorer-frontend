@@ -55,7 +55,6 @@ function MoviesList() {
 
   return (
     <section className='movies-list'>
-      
         {pathname === '/movies' ? (
           <>
             <ul className='movies-list__frame'>
@@ -64,7 +63,7 @@ function MoviesList() {
               ))}
             </ul>
             {fakeMoviesDb.length > moviesCounter ? (
-              <button className='movies-list__button button' onClick={showMore}>Еще</button>
+              <button type='button' className='movies-list__button button' onClick={showMore}>Еще</button>
             ) : ('')}
           </>
         ) : (
@@ -76,7 +75,7 @@ function MoviesList() {
             </ul>
 
             {savedMoviesDb.length > moviesCounter ? (
-              <button className='movies-list__button button' onClick={showMore}>Еще</button>
+              <button type='button' className='movies-list__button button' onClick={showMore}>Еще</button>
             ) : ('')}
           </>
         )}

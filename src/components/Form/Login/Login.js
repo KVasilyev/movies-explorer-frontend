@@ -60,7 +60,7 @@ function Login({ formErrorText }) {
       </div>
       <div className='form__bottom'>
         <p className='form__bottom-error'>{formErrorText}</p>
-        <button className='button form__button' disabled={!isValid}>Войти</button>
+        <button type='submit' className='button form__button' disabled={!isValid}>Войти</button>
         <p className='form__text'>
           Ещё не зарегистрированы?
           <Link to='/signup' className='form__link link'>Регистрация</Link>

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 function Header({ isLogged }) {
   return (
-    <section className='header'>
+    <header className='header'>
       <div className='header__frame'>
         <Logo />
         {isLogged ? (
@@ -20,7 +20,7 @@ function Header({ isLogged }) {
           </div>
         )}
       </div>
-    </section>
+    </header>
   )
 }
 

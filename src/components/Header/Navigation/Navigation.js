@@ -19,12 +19,12 @@ function Navigation() {
   }
 
   return (
-    <div className='navigation'>
+    <nav className='navigation'>
       <button className='button navigation__menu-open' onClick={openMenuClick}></button>
       <div className={`navigation__menu ${isMenuOpen ? `navigation__menu_active` : ``}`}>
-        <button className='button navigation__menu-close navigation__link_mobile' onClick={closeMenuClick}></button>
+        <button className='button navigation__menu-close navigation__link-mobile' onClick={closeMenuClick}></button>
         <div className='navigation__links'>
-          <Link to='/' onClick={closeMenuClick} className={pathname === '/' ? 'navigation__link link navigation__link_mobile navigation__link_active' : 'navigation__link link navigation__link_mobile'}>Главная</Link>
+          <Link to='/' onClick={closeMenuClick} className={pathname === '/' ? 'navigation__link link navigation__link-mobile navigation__link_active' : 'navigation__link link navigation__link-mobile'}>Главная</Link>
           <Link to='/movies' onClick={closeMenuClick} className={pathname === '/movies' ? 'navigation__link link navigation__link_active' : 'navigation__link link'}>Фильмы</Link>
           <Link to='/saved-movies' onClick={closeMenuClick} className={pathname === '/saved-movies' ? 'navigation__link link navigation__link_active' : 'navigation__link link'}>Сохраненные фильмы</Link>
         </div>
@@ -35,7 +35,7 @@ function Navigation() {
         </Link>
       </div>
       <div className={`navigation__overlay ${isMenuOpen ? `navigation__overlay-active` : ``}`} />
-    </div>
+    </nav>
   )
 }
 

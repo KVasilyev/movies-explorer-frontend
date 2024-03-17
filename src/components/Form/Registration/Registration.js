@@ -79,7 +79,7 @@ function Resistration({ formErrorText }) {
       </div>
       <div className='form__bottom'>
         <p className='form__bottom-error'>{formErrorText}</p>
-        <button className='button form__button' disabled={!isValid}>Зарегистрировться</button>
+        <button type='submit' className='button form__button' disabled={!isValid}>Зарегистрировться</button>
         <p className='form__text'>
           Уже зарегистрированы?
           <Link to='/signin' className='form__link link'>Войти</Link>

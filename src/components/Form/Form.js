@@ -5,13 +5,13 @@ import Logo from '../Logo/Logo';
 function Form({ title, onSubmit ,children }) {
   
   return (
-    <section className='form'>
-        <form className='form__auth' onSubmit={onSubmit} noValidate>
-          <Logo />
+    <main className='form'>
+        <form className='form__auth' onSubmit={onSubmit} noValidate>  
+        <Logo />
           <h1 className='form__headline'>{title}</h1>
           {children}
         </form>
-    </section>
+    </main>
   )
 }
 

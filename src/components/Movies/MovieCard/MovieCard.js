@@ -14,20 +14,20 @@ function MoviesCard({ isLiked, movie }) {
   }
   
   return (
-        <li className='movie__card'>
+        <li className='movie'>
           {pathname === '/movies' ? (
             <>
               {movie.isLiked ? 
               <div className='movie__saved-badge' />
               :
-              <button className='button movie__save-button' onClick={likeMovie}>Сохранить</button>
+              <button type='button' className='button movie__save-button' onClick={likeMovie}>Сохранить</button>
               }
             </>
           ) : (
-            <button className='button movie__delete-button' onClick={likeMovie}></button>
+            <button type='button' className='button movie__delete-button' onClick={likeMovie}></button>
           )}
           <Link to={movie.trailerLink} className='movie__link' target='_blank'>
-            <img className='movie__card_image' src={movie.image} alt={movie.nameRU}/>
+            <img className='movie__image' src={movie.image} alt={movie.nameRU}/>
             <div className='movie__text'>
               <p className='movie__name'>{movie.nameRU}</p>
               <p className='movie__time'>{hours}ч {minutes}м</p>

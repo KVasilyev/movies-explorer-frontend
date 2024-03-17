@@ -63,9 +63,15 @@
   display: flex;
   align-items: center;
   max-height: 40px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000;
 }
 .search__switch:hover {
   cursor: pointer;
+  color: rgba(0,0,0,0.8);
 }
 .search__checkbox {
   opacity: 0;
@@ -81,6 +87,7 @@
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 34px;
+  margin-right: 14px;
 }
 .search__slider:before {
   position: absolute;
@@ -101,14 +108,6 @@
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
-}
-.search__switch-text {
-  color: #000;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  margin-left: 15px;
 }
 .search__break {
   margin-left: 20px;
@@ -141,8 +140,6 @@
     justify-content: center;
     min-width: 100%;
     top: 107px;
-  }
-  .search__switch-text {
     font-size: 11px;
   }
   .search__break {

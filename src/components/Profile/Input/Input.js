@@ -3,6 +3,7 @@ import './Input.css'
 
 function Input({
   inputState,
+  inputPlaceholder,
   inputName, 
   inputType, 
   inputLabel, 
@@ -15,22 +16,25 @@ function Input({
   errorMesage
 }) {
   return (
-    <label className='profile__label'>
-          <span className='profile__input-name'>{inputLabel}</span>
-          <input 
-            className='profile__input' 
-            disabled={inputState}
-            name={inputName} 
-            type={inputType}
-            id={inputName}
-            onChange={onChange}
-            value={inputValue}  
-            minLength={minLength}
-            maxLength={maxLength}
-            required
-          />
-          <p className='profile__input-error'>{error ? errorMesage : ''}</p>
-    </label>
+    <fieldset className='profile__inputs'>
+      <label className='profile__label'>
+            <span className='profile__input-name'>{inputLabel}</span>
+            <input 
+              className='profile__input' 
+              disabled={inputState}
+              placeholder={inputPlaceholder}
+              name={inputName} 
+              type={inputType}
+              id={inputName}
+              onChange={onChange}
+              value={inputValue}  
+              minLength={minLength}
+              maxLength={maxLength}
+              required
+            />
+      </label>
+      <p className='profile__input-error'>{error ? errorMesage : ''}</p>
+    </fieldset>
   )
 }
 

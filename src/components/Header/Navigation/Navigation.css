@@ -19,7 +19,7 @@
 .navigation__link_active {
   font-weight: 500;
 }
-.navigation__link_mobile {
+.navigation__link-mobile {
   display: none;
 }
 .navigation__account {
@@ -64,7 +64,7 @@
   .navigation__menu {
     display: none;
   }
-  .navigation__link_mobile {
+  .navigation__link-mobile {
     display: block;
   }
   .navigation__menu_active {

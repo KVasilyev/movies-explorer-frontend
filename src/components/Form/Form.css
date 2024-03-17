@@ -79,6 +79,7 @@
   text-align: left;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .form__bottom {
   text-align: center;
