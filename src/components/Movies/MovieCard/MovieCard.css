@@ -33,7 +33,7 @@
   text-overflow: ellipsis; 
   transition: .3s;
 }
-.movie__card:hover .movie__name {
+.movie:hover .movie__name {
   color: rgba(0,0,0,0.7);
 }
 .movie__time {
